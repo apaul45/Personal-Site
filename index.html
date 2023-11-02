@@ -21,14 +21,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
     />
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+      }
+    </style>
   </head>
 
-  <body
-    id="page-top"
-    data-bs-spy="scroll"
-    data-bs-target="#mainNav"
-    data-bs-offset="77"
-  >
+  <body style="width: 100%; height: 100%">
     <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
       <div class="container">
         <a class="navbar-brand" href="#">ayon paul</a
@@ -61,7 +63,11 @@
     </nav>
     <header
       class="masthead"
-      style="background-image: url('assets/img/intro-bg.jpg')"
+      style="
+        background-image: url('assets/img/intro-bg.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+      "
     >
       <div class="intro-body">
         <div class="container">
@@ -81,22 +87,23 @@
     </header>
     <section class="text-center content-section" id="about">
       <img
-        style="width: 346px; height: 393px; border-radius: 1327px"
+        style="width: 20%; height: 20%; border-radius: 1327px"
         src="assets/img/Screen%20Shot%202022-06-14%20at%2012.29.14%20AM.png"
       />
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <p style="font-size: 24px; margin-top: 54px">
-              Hi there! My name is Ayon Paul and I am an aspiring software
-              engineer. I'm mostly interested in full stack software engineering
-              but I also have interests in machine learning and game
-              development.&nbsp;
+            <p class="about-me-text" style="margin-top: 54px; width: 100%">
+              Hi there! My name is Ayon Paul and I am a full stack software
+              engineer. I've built applications using one of React, Angular, and
+              Vue, one of Node.js and FastAPI, one of MongoDB and SQL, Google
+              Cloud Platform, Docker, Kubernetes, and GitHub Actions. I'm also
+              really interested in learning more about AI and machine learning!
             </p>
-            <p style="font-size: 24px">
+            <p class="about-me-text">
               Outside of programming, I enjoy watching basketball and football,
-              improving my typing speed, and watching anime. Feel free to check
-              out my resume below!
+              improving my typing speed, and watching anime. I may have blogs
+              here soon but for now feel free to check out my resume below!
             </p>
           </div>
         </div>
@@ -108,12 +115,13 @@
       style="
         background-image: url('assets/img/downloads-bg.jpg');
         height: fit-content;
+        background-repeat: no-repeat;
       "
     >
       <h1 style="font-size: 53px; margin-bottom: 90px">Resume</h1>
       <object
         data="Ayon_Paul_Resume copy.pdf"
-        width="1000"
+        width="50%"
         height="1100"
       ></object>
     </section>
@@ -125,7 +133,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
-            <h2 style="font-size: 69px">Contact me</h2>
+            <h2 style="font-size: 53px">Contact me</h2>
             <p style="font-size: 28px">
               Feel free to contact me with any of the links below!
             </p>
