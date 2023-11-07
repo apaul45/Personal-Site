@@ -575,9 +575,14 @@ progress {
   margin-left: auto;
 }
 
-/* #resume-pdf {
+#resume-pdf {
   display: none;
-} */
+}
+
+#resume-link {
+  display: none;
+  height: 50%;
+}
 
 @media (min-width: 576px) {
   .container-sm,
@@ -608,10 +613,11 @@ progress {
   .container {
     max-width: 1140px;
   }
-
-  /* #resume-pdf {
-    display: inline-flex;
-  } */
+}
+@media only screen and (max-width: 1399px) {
+  #resume-link {
+    display: inline-block;
+  }
 }
 @media (min-width: 1400px) {
   .container-xxl,
@@ -621,6 +627,10 @@ progress {
   .container-sm,
   .container {
     max-width: 1320px;
+  }
+
+  #resume-pdf {
+    display: inline-flex;
   }
 }
 .row {
